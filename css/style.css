@@ -99,19 +99,20 @@ header {
 }
 
 #bella {
-	background-image: url("https://kattow88.github.io/assets/bella.jpg");
+	background-image: url("https://kattow88.github.io/bella-caffe/assets/bella_exterior.jpg");
 }
 
 #teatime {
-	background-image: url("https://kattow88.github.io/assets/teatime.jpg");
+	background-image: url("https://kattow88.github.io/tea-time/assets/tea-time.jpg");
 }
 
 #weatherpug {
-	background-image: url("https://kattow88.github.io/assets/weatherpug.jpg");
+	background-image: url("https://kattow88.github.io/weatherpug/assets/hover-doug.jpg");
 }
 
 #sh-ttrumpsaid {
-	background-image: url("https://kattow88.github.io/assets/strumpsaid.jpg");
+	background-color: rgb(40, 40, 40);
+	background-image: url("https://whatdoestrumpthink.com/api-docs/images/logo.png");
 }
 
 .image-container {
