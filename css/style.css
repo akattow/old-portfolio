@@ -153,5 +153,6 @@ i:after {
 	.work>div>div {
 		display: block;
 		width: 100%;
+		height: 60vw;
 	}
 }
