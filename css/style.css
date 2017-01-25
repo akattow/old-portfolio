@@ -12,6 +12,18 @@ body {
 	padding: 0;
 }
 
+header {
+	height: 100vh;
+	width: 100%;
+	display: table;
+	padding: 10em 3em;
+	background: white;
+	background: linear-gradient(-70deg, white, rgba(83, 198, 140, .75));
+	background: -webkit-linear-gradient(-70deg, white, rgba(83, 198, 140, .75));
+	background: -o-linear-gradient(-70deg, white, rgba(83, 198, 140, .75));
+	background: -moz-linear-gradient(-70deg, white, rgba(83, 198, 140, .75));
+}
+
 ul {
 	list-style-type: none;
 	overflow: hidden;
@@ -21,8 +33,10 @@ nav ul {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: white;
+	background-color: transparent;
 	padding-left: 2em;
+	height: 3.5em;
+	opacity: 1;
 }
 
 nav li {
@@ -42,13 +56,22 @@ li a {
 }
 
 li a:hover {
-	color: #3B009C;
+	color: rgb(83, 198, 140);
 }
 
-header {
-	height: 100%;
-	display: table;
-	padding: 5em 3em;
+.change {
+	-webkit-animation: fadeOut 200ms forwards;
+	animation: fadeOut 200ms forwards;
+}
+
+@webkit-keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
+@keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
 }
 
 .work {
@@ -65,7 +88,7 @@ header {
 
 .work>div>div {
 	display: table-cell;
-	background-color: rgb(59,0,156);
+	background-color: rgb(83, 198, 140);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -77,7 +100,7 @@ header {
 	text-decoration: none;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	color: transparent;
+	color: rgba(0, 0, 0, 0);
 	font-weight: 700;
 	font-size: 200%;
 	line-height: 1.75em;
@@ -97,7 +120,7 @@ header {
 }
 
 .work>div>div>a:hover {
-	background-color: rgba(59, 0, 156, .8);
+	background-color: rgba(83, 198, 140, .8);
 	color: white;
 }
 
@@ -118,9 +141,24 @@ header {
 	background-image: url("https://whatdoestrumpthink.com/api-docs/images/logo.png");
 }
 
+.part-two {
+	background: white;
+	background: linear-gradient(40deg, white, rgba(83, 198, 140, .75));
+	background: -webkit-linear-gradient(40deg, white, rgba(83, 198, 140, .75));
+	background: -o-linear-gradient(40deg, white, rgba(83, 198, 140, .75));
+	background: -moz-linear-gradient(40deg, white, rgba(83, 198, 140, .75));
+}
+
 .image-container {
 	width: 100%;
-	padding-top: 5em;
+	height: 70%;
+	padding: 15vw 0 2vw 0;
+}
+
+#banner {
+	position: relative;
+	height: 10px;
+	width: 100%;
 }
 
 #selfie {
@@ -129,13 +167,59 @@ header {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
+	position: absolute;
+	top: -70px;
+	left: 50%;
+	transform: translateX(-50%);
 	margin: auto;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
 }
+
+.table {
+	background-color: rgb(40, 40, 40);
+	color: rgb(240, 240, 240);
+	display: table;
+	width: 100%;
+	padding-bottom: 5vw;
+}
+
+.table>div {
+	display: table-row;
+}
+
+.table>div>div {
+	display: table-cell;
+	padding: 6vw;
+}
+
+.about h3 {
+	font-size: 1.5em;
+	margin: 1em 0;
+}
+
+.about br {
+	line-height: 250%;
+}
+
+.about p, .about li {
+	font-family: 'Nunito Sans', sans-serif;
+	color: rgb(200, 200, 200);
+}
+
+.about li {
+	display: block;
+	margin: 0 auto .75em auto;
+}
+
+#skills {
+	padding-right: 15vw;
+}
+
 
 footer {
 	width: 100%;
 	text-align: center;
-	padding: 2em 0 .5em 0;
+	padding: 8vw 0 5vw 0;
 	font-size: 1.25em;
 }
 
@@ -149,10 +233,30 @@ i:after {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
 	.work>div>div {
 		display: block;
 		width: 100%;
 		height: 60vw;
 	}
+
+	.image-container {
+		padding: 20vw 0 2vw 0;
+	}
+
+	.table>div>div {
+		display: block;
+		padding: 6vw 6vw 0 6vw;
+	}
+
+	.about li {
+		display: inline;
+		margin: 0 1vw;
+	}
+
+	#skills {
+		padding-right: 0;
+		padding-bottom: 6vw;
+	}
+
 }

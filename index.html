@@ -9,36 +9,55 @@
 </head>
 
 <body>
-<!--   <nav>
-    <ul class="navbar">
+  <nav>
+    <ul id="navbar">
       <li id="work"><a href="/#work">my work</a></li>
-      <li id="hello"><a href="/#contact">say hi</a></li>
+      <li id="hello"><a href="/#about">say hi</a></li>
     </ul>
-  </nav> -->
+  </nav>
 
-  <div class="main">
-    <header>
-      <div>
-      <h1>Hi, my name is Kat.<br>
-      Here you'll find a few things I've built.</h1>
-    </header>
+  <header>
+    <h1 id="top-text">Hi, my name is Kat.<br>
+    Here you'll find a few things I've built.</h1>
+  </header>
 
-    <section class="work" id="work">
-      <div>
-        <div id="bella"><a href="/bella-caffe/" target="_blank"><h1>Bella<br>Caffe</h1><h2>a design project<br>work in progress</h2></a></div>
-        <div id="teatime"><a href="/tea-time/" target="_blank"><h1>Tea<br>Time</h1><h2>an interaction project</h2></a></div>
+  <section class="work" id="work">
+    <div></div>
+    <div>
+      <div id="bella"><a href="/bella-caffe/" target="_blank"><h1>Bella<br>Caffe</h1><h2>a design project<br>work in progress</h2></a></div>
+      <div id="teatime"><a href="/tea-time/" target="_blank"><h1>Tea<br>Time</h1><h2>an interaction project</h2></a></div>
+    </div>
+    <div>
+      <div id="weatherpug"><a href="/weatherpug/" target="_blank"><h1>Doug<br>the Pug</h1><h2>a weather app</h2></a></div>
+      <div id="sh-ttrumpsaid"><a href="/sh-ttrumpsaid/" target="_blank"><h1>Sh*t<br>Trump Said</h1><h2>a quote generator</h2></a></div>
+    </div>
+  </section>
+  <div class="part-two">
+  <section class="about">
+      <div class="image-container">
+      <div id="banner"><div id="selfie"></div></div>
       </div>
-      <div>
-        <div id="weatherpug"><a href="/weatherpug/" target="_blank"><h1>Doug<br>the Pug</h1><h2>a weather app</h2></a></div>
-        <div id="sh-ttrumpsaid"><a href="/sh-ttrumpsaid/" target="_blank"><h1>Sh*t<br>Trump Said</h1><h2>a quote generator</h2></a></div>
+      <div class="table">
+        <div>
+          <div id="copy">
+            <h3>Hello!</h3>
+            <p>I'm Kat. I'm a left-brain/right-brain hybrid type. I'm a self-taught digital/web designer with a background of visual design and a foreground of in-house marketing.<br>Although I'm new to coding, I'm passionate about front-end development, user interaction, and visual storytelling. I'm actively flexing my code muscles with a minimum of 2 hours every day.<br>When I'm not exercising my JavaScript skills, you'll find me at the gym training for my next powerlifting meet or at home doodling cartoon pugs and robots.</p>
+          </div>
+          <div id="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>InDesign</li>
+            </ul>
+          </div>            
+        </div>
       </div>
-    </section>
-
-    <section class="about">
-      <div class="image-container"><div id="selfie"></div></div>
-    </section>
-
-  </div>
+  </section>
 
   <footer id="contact">
     <h4>Kat Tow</h4>
@@ -48,7 +67,22 @@
       <li><a href="https://www.facebook.com/kat.tow.3"><i class="fa fa-facebook"></i></a></li>
       <li><a href="https://www.instagram.com/partly_stars/"><i class="fa fa-instagram"></i></a></li>
       <li><a href="https://www.linkedin.com/in/kattow"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="assets/cv.pdf"><i class="fa fa-file-text-o"></i></a></li>
       <li><a href="mailto:kattow88@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
   </footer>
+  </div>
 </body>
+<script type="text/javascript">
+  window.onscroll=function() {
+    var top = document.body.scrollTop;
+    var header = document.getElementById("top-text");
+    var headTop = header.getBoundingClientRect().top;
+    if (headTop < top/10) {
+      document.getElementById("navbar").className="change";
+    } else {
+      document.getElementById("navbar").className="";
+    }
+  }
+  document.getElementById("navbar")
+</script>
 </html>
