@@ -13,7 +13,7 @@ body {
 }
 
 header {
-	height: 100vh;
+	height: 50vh;
 	width: 100%;
 	display: table;
 	padding: 10em 3em;
@@ -139,6 +139,10 @@ li a:hover {
 #sh-ttrumpsaid {
 	background-color: rgb(40, 40, 40);
 	background-image: url("https://whatdoestrumpthink.com/api-docs/images/logo.png");
+}
+
+#wiki {
+	background-image: url("https://kattow88.github.io/assets/wiki-search.jpg")
 }
 
 .part-two {
