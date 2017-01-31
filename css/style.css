@@ -120,8 +120,8 @@ li a:hover {
 }
 
 .work>div>div>a:hover {
-	background-color: rgba(83, 198, 140, .8);
-	color: white;
+	background-color: rgba(255, 255, 255, .8);
+	color: rgb(83, 198, 140);
 }
 
 #bella {
