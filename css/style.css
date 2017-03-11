@@ -95,8 +95,14 @@ li a:hover {
 	display: table-cell;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: cover;
+	background-size: 100%;
 	box-shadow: .5em .5em 3em rgba(0, 0, 0, .2);
+	-webkit-transition: background-size .6s;
+  transition: background-size .6s;
+}
+
+.work>div>div:hover {
+	background-size: 110%;
 }
 
 .work>div>div>a {
@@ -113,6 +119,8 @@ li a:hover {
 	text-align: center;
 	width: 100%;
 	height: 100%;
+	-webkit-transition: color .6s, background-color .6s;
+  transition: color .6s, background-color .6s;
 }
 
 .work>div>div>a>h2 {
@@ -122,8 +130,8 @@ li a:hover {
 }
 
 .work>div>div>a:hover {
-	background-color: rgba(255, 255, 255, .8);
-	color: rgb(83, 198, 140);
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(83, 198, 140, .75);
 }
 
 #weatherpug {
@@ -140,7 +148,12 @@ li a:hover {
 }
 
 #wiki {
-	background-image: url("https://kattow88.github.io/assets/wiki-search.jpg")
+	background-image: url("https://kattow88.github.io/assets/wiki-search.png");
+	background-size: 130%;
+}
+
+#wiki:hover {
+	background-size: 140%;
 }
 
 .image-container {
