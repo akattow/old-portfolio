@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25813",
 "files": {
+	"\/about.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/about.html",
+		"oF": 0
+		},
 	"\/assets\/coursework.jpg": {
 		"ft": 16384,
 		"iS": 1621973,
@@ -18,6 +24,12 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/assets\/kattow_resume_2017.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/kattow_resume_2017.pdf",
+		"oF": 0
 		},
 	"\/assets\/mapping.JPG": {
 		"ft": 16384,
@@ -81,12 +93,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/css\/style.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/style.css.map",
-		"oF": 0
-		},
 	"\/css\/style.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -99,6 +105,12 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/faq.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/faq.html",
+		"oF": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
