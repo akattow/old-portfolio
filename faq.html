@@ -20,38 +20,21 @@
   </nav>
 
   <section class="about">
+    <div class="right">
+      <div class="right-nav">
+            <ul>
+              <li><a href="#">HTML</a></li>
+            </ul>
+          </div>
+    </div>
+
     <div class="left about-left">
     <h1>About Kat</h1>
     <h5>My Work</h5>
     <p>I'm a left-brain/right-brain hybrid type and a self-taught user experience designer with a professional background in visual and graphic design. My experience also includes small business and non-profit marketing - bonus!</p>
 
-    <h5>The Crash</h5>
-    <p>In April 2016, while working in graphic design and marketing, I crashed my moped on a pothole. I was extremely lucky to emerge from the ER without any permanent damage. I had a fractured C7 vertebrae, scapula, and two fractured teeth.<br><br>
-    The hospital and the subsequent months of specialists, oral surgery, insurance questions, and slow healing was a revelation. I truly understood that design is <em>"not just what it looks like and feels like. Design is how it works."</em><br><br>
-    I'm passionate about the potential to improve not only healthcare and patient experience, but all aspects of life when people need help the most. Since 2016, I've been studying UX Research &amp; Design and learned front-end development.
-    </p>
-
-    <h5>What I Do</h5>
-    <p>I'm most passionate about visual storytelling, user-centered design, and trying to make the world a slightly better place. When I'm not working on my JavaScript skills, you'll find me at the gym training for my next powerlifting meet or at home doodling cartoon pugs.</p>
-
     </div>
 
-    <div class="right">
-      <div id="selfie"></div>
-      <div class="right-nav">
-            <ul>
-              <li><h3>Skills</h3></li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-              <li>InDesign</li>
-              <li>Sketch</li>
-            </ul>
-          </div>
-    </div>
         <div class="clearfix"></div>
   </section>
 
@@ -69,4 +52,19 @@
   </footer>
   </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+
+  $("a[href^='#']").on("click", function(event) {
+    var target = $(this.getAttribute("href"));
+
+    if (target.length) {
+      event.preventDefault();
+      $("html, body").stop().animate({
+        scrollTop: target.offset().top
+      }, 500);
+    }
+   });
+
+</script>
 </html>

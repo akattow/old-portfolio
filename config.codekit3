@@ -106,6 +106,12 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/faq.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/faq.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
