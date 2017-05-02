@@ -22,7 +22,7 @@
 		"oAP": "\/assets\/coursework.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/kattow_resume_2017.pdf": {
@@ -47,8 +47,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/rebelifts.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -111,12 +111,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"\/faq.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/faq.html",
-		"oF": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
