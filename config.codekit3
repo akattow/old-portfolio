@@ -31,7 +31,7 @@
 		"oAP": "\/assets\/kattow_resume_2017.pdf",
 		"oF": 0
 		},
-	"\/assets\/mapping.jpg": {
+	"\/assets\/mapping.JPG": {
 		"ft": 16384,
 		"iS": 2017474,
 		"oA": 0,
@@ -92,6 +92,12 @@
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/css\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/style.css.map",
+		"oF": 0
 		},
 	"\/css\/style.scss": {
 		"aP": 1,
