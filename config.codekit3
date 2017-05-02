@@ -19,6 +19,27 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/mapping.JPG": {
+		"ft": 16384,
+		"iS": 2017474,
+		"oA": 0,
+		"oAP": "\/assets\/mapping.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/rebelifts.png": {
+		"ft": 32768,
+		"iS": 743243,
+		"oA": 0,
+		"oAP": "\/assets\/rebelifts.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/selfie.jpg": {
 		"ft": 16384,
 		"iS": 42527,
