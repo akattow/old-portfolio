@@ -25,13 +25,24 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/hover-doug.png": {
+		"ft": 32768,
+		"iS": 146731,
+		"oA": 0,
+		"oAP": "\/assets\/hover-doug.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/kattow_resume_2017.pdf": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/kattow_resume_2017.pdf",
 		"oF": 0
 		},
-	"\/assets\/mapping.JPG": {
+	"\/assets\/mapping.jpg": {
 		"ft": 16384,
 		"iS": 2017474,
 		"oA": 0,
@@ -54,7 +65,7 @@
 		},
 	"\/assets\/selfie.jpg": {
 		"ft": 16384,
-		"iS": 21514,
+		"iS": 42527,
 		"oA": 0,
 		"oAP": "\/assets\/selfie.jpg",
 		"oF": 0,
@@ -145,7 +156,7 @@
 	"creationDate": 511047299,
 	"displayValue": "kattow88.github.io",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-leo"
+	"iconImageName": "meme-doge"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

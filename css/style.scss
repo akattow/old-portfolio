@@ -158,15 +158,16 @@ li a {
 .work-box {
 	height: 25em;
 	width: 60%;
+	background: blue;
 	.image-box{
 		height: 25em;
+		max-height: 400px;
+		max-width: 600px;
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: cover;
+		background-size: auto 150%;
 	  -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
 	  filter: grayscale(60%);
-		-webkit-transition: background-size .1s;
-	  transition: background-size .1s;
 		&:hover {
 	    -webkit-filter: grayscale(30%) brightness(110%); /* Safari 6.0 - 9.0 */
 	    filter: grayscale(30%) brightness(110%);
@@ -200,17 +201,22 @@ li a {
 	background-image: url("https://kattow88.github.io/weatherpug/assets/hover-doug.jpg");
 }
 
+#teatime {
+	cursor: pointer;
+	background-image: url("https://kattow88.github.io/tea-time/assets/tea-time.jpg");
+}
+
 #mapping {
-	background-image: url("/assets/mapping.jpg");
+	background-image: url("https://kattow88.github.io/tea-time/assets/mapping.jpg");
 }
 
 #coursework {
-	background-image: url("/assets/coursework.jpg");
+	background-image: url("https://kattow88.github.io/assets/coursework.jpg");
 }
 
 #rebelifts {
 	cursor: pointer;
-	background-image: url("/assets/rebelifts.png")
+	background-image: url("https://kattow88.github.io/assets/rebelifts.png")
 }
 
 #selfie {
