@@ -25,6 +25,39 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/edxux_preview.png": {
+		"ft": 32768,
+		"iS": 256383,
+		"oA": 0,
+		"oAP": "\/assets\/edxux_preview.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/edxux_sketch1.png": {
+		"ft": 32768,
+		"iS": 6513444,
+		"oA": 0,
+		"oAP": "\/assets\/edxux_sketch1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/edxux_sketch2.png": {
+		"ft": 32768,
+		"iS": 7370690,
+		"oA": 0,
+		"oAP": "\/assets\/edxux_sketch2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/hover-doug.png": {
 		"ft": 32768,
 		"iS": 146731,
@@ -65,7 +98,7 @@
 		},
 	"\/assets\/selfie.jpg": {
 		"ft": 16384,
-		"iS": 42527,
+		"iS": 21514,
 		"oA": 0,
 		"oAP": "\/assets\/selfie.jpg",
 		"oF": 0,
@@ -123,11 +156,53 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/edxux.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/edxux.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/js\/min\/script-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/min\/script-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/typed.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/typed-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/min\/script-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/min\/min\/script-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -146,6 +221,15 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/min\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		}
 	},
 "hooks": [

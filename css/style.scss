@@ -12,10 +12,10 @@ body {
 	min-height: 100vh;
 	font-weight: 400;
 	background-color: white;
-	background: linear-gradient(-70deg, white, rgba(83, 198, 140, .5));
-	background: -webkit-linear-gradient(-70deg, white, rgba(83, 198, 140, .5));
-	background: -o-linear-gradient(-70deg, white, rgba(83, 198, 140, .5));
-	background: -moz-linear-gradient(-70deg, white, rgba(83, 198, 140, .5));
+	background: linear-gradient(90deg, rgba(83, 198, 140, .5), white, rgba(83, 198, 140, .5));
+	background: -webkit-linear-gradient(90deg, rgba(83, 198, 140, .5), white, rgba(83, 198, 140, .5));
+	background: -o-linear-gradient(90deg, rgba(83, 198, 140, .5), white, rgba(83, 198, 140, .5));
+	background: -moz-linear-gradient(90deg, rgba(83, 198, 140, .5), white, rgba(83, 198, 140, .5));
 }
 
 *, *:before, *:after {
@@ -54,11 +54,13 @@ a {
 	}
 }
 
+nav {
+	height: 10vh;
+}
+
 header {
-	max-height: 60vh;
+	height: 90vh;
 	width: 100%;
-	padding-top: 8em;
-	padding-bottom: 10em;
 }
 
 ul {
@@ -69,8 +71,6 @@ ul {
 nav ul {
 	width: 100%;
 	background-color: transparent;
-	height: 3.5em;
-	opacity: 1;
 }
 
 nav li {
@@ -97,20 +97,33 @@ li a {
 	padding-right: $xpad;
 }
 
-.about {
+.intro {
+	padding: 10em 0;
+}
+
+.about, .app {
 	margin-top: 5em;
 	h1 {
 		font-size: 2em;
 		padding-bottom: 1em;
 	}
+	h2 {
+		padding-bottom: 2em;
+	}
 	h5 {
-		padding-bottom: 1em;
+		padding-top: 1em;
 	}
 	p {
 		padding-bottom: 2em;
 	}
 	.clearfix {
 		height: 4em;
+	}
+}
+
+.app {
+	h1 {
+		padding-bottom: 0;
 	}
 }
 
@@ -137,17 +150,11 @@ li a {
 .left {
 	float: left;
 	padding-left: $xpad;
-	h2, h5, p {
-		padding-right: 40px;
-	}
 }
 
 .right {
 	float: right;
 	padding-right: $xpad;
-	h2, h5, p {
-		padding-left: 40px;
-	}
 }
 
 .clearfix {
@@ -157,27 +164,34 @@ li a {
 
 .work-box {
 	height: 25em;
-	width: 60%;
-	background: blue;
-	.image-box{
-		height: 25em;
-		max-height: 400px;
-		max-width: 600px;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: auto 150%;
-	  -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
-	  filter: grayscale(60%);
-		&:hover {
-	    -webkit-filter: grayscale(30%) brightness(110%); /* Safari 6.0 - 9.0 */
-	    filter: grayscale(30%) brightness(110%);
+	width: 50%;
+	.image-wrap {
+	  height: 400px;
+	  position: relative;
+	  overflow: hidden;
+		.image-box{
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+	    transform: scale(1.1);
+		  -webkit-filter: grayscale(60%);
+		  filter: grayscale(60%);
+		}
+		&:hover .image-box {
+	    -webkit-filter: grayscale(0%);
+	    filter: grayscale(0%);
 		}
 	}
 }
 
 .work-title {
 	height: 25em;
-	width: 40%;
+	width: 50%;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	text-align: left;
@@ -196,31 +210,46 @@ li a {
 	}
 }
 
-#weatherpug {
-	cursor: pointer;
-	background-image: url("https://kattow88.github.io/weatherpug/assets/hover-doug.jpg");
+.title-right {
+	padding-left: $xpad;
 }
 
-#teatime {
+.title-left {
+	padding-right: $xpad;
+}
+
+.photo-group {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding-bottom: 5em;
+}
+.photo {
+	display: flex-column;
+	height: 60vh;
+	width: auto;
+}
+
+#weatherpug {
 	cursor: pointer;
-	background-image: url("https://kattow88.github.io/tea-time/assets/tea-time.jpg");
+	background-image: url("/assets/hover-doug.png");
 }
 
 #mapping {
-	background-image: url("https://kattow88.github.io/tea-time/assets/mapping.jpg");
+	background-image: url("/assets/mapping.jpg");
 }
 
 #coursework {
-	background-image: url("https://kattow88.github.io/assets/coursework.jpg");
+	background-image: url("/assets/coursework.jpg");
 }
 
 #rebelifts {
 	cursor: pointer;
-	background-image: url("https://kattow88.github.io/assets/rebelifts.png")
+	background-image: url("/assets/rebelifts.png")
 }
 
 #selfie {
-	background-image: url("https://kattow88.github.io/assets/selfie.jpg");
+	background-image: url("/assets/selfie.jpg");
 	background-size: cover;
 	height: 200px;
 	width: 200px;
@@ -276,25 +305,37 @@ i:after {
 	.left {
 		float: none;
 		width: 100%;
-		padding: 0;
+		padding: $mobile-xpad;
 	}
 
 	.right {
 		float: none;
 		width: 100%;
-		padding-right: 0;
-		h2, h5, p {
-			padding-left: 0;
+		padding: $mobile-xpad;
+		padding-bottom: 0;
+		div {
+			margin: auto;
 		}
+		div > ul > li {
+			text-align: center;
+		}
+	}
+
+	.about .clearfix {
+		display: none;
 	}
 
 	.work-box {
 		height: 20em;
 		padding-left: $mobile-xpad;
 		padding-right: $mobile-xpad;
-		.image-box{
+		.image-wrap{
 			height: 20em;
 		}
+	}
+
+	.right, .left {
+		padding-top: 0;
 	}
 
 	.work-title {

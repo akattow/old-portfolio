@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <nav class="xpad">
     <ul id="navbar">
       <li id="me"><a href="/about.html">about me</a></li>
@@ -18,57 +19,64 @@
     </ul>
   </nav>
   <header class="xpad">
-    <h1>Hi, my name is Kat.</h1>
-    <h2>I'm a front-end developer &amp; UX designer passionate about digital storytelling, user-centered design, and creative problem-solving.</h2>
+    <div class="intro">
+      <h1>Hi, my name is Kat.</h1>
+      <h2>I'm a front-end developer &amp; UX designer.<br>
+        I'm passionate about <span class="element"></span>
+      </h2>
+    </div>
   </header>
 
   <div class="border"></div>
 
   <section class="work">
-    <div class="work-title right">
+    <div class="work-title right title-right">
+      <h5>edX · MicroMasters in UX Research &amp; Design</h5>
+      <a href="/edxux.html" target="_blank"><h2>Coursework · ongoing</h2></a>
+      <p>UI/UX Iterative Sketching, Heuristic Analysis and Reports, User Interviews, and Micro-Testing. Click for the Ideation &amp; Research phase of my ongoing project. See my <a href="/resume.pdf">resume</a> or <a href="https://www.linkedin.com/in/kattow/">LinkedIn</a> for courselist.</p>
+      <h5>Research · Interviews · Ideation · Design</h5>
+    </div>
+    <div class="work-box left">
+    <a href="/edxux.html" target="_blank"><div class="image-wrap"><div class="image-box" id="coursework"></div></div></a>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="work-title left title-left">
       <h5>2-Story Creative</h5>
       <h2>UX+Digital Designer · various projects</h2>
-      <p>2-Story is a tiny but awesome marketing and design firm located in the heart of Walker's Point. I wear many hats, analyzing demographic data for preliminary user personas, completed baseline assessments, designing digital assets, and coding front-end on various projects.</p>
+      <p>2-Story is a tiny but awesome marketing and design firm located in the heart of Walker's Point. I wear many hats, analyzing demographic data, creating user personas, conducting competitor/peer reviews, designing digital assets, and coding front-end on various projects.</p>
       <h5>Research · Analysis · Coding · Design</h5>
     </div>
-    <div class="work-box left"><div class="image-box" id="mapping"></div></div>
-
-    <div class="clearfix"></div>
-
-    <div class="work-title left">
-      <h5>Rebelifts</h5>
-      <a href="https://rebelifts.com" target="_blank"><h2>Web &amp; product design</h2></a>
-      <p>Women's fitness apparel e-commerce site. Branding, web design, custom coding, and product design. Products are still being added, and more custom modifications are forthcoming.</p>
-      <h5>Branding · Product Design · Coding</h5>
-    </div>
-
-    <div class="work-box right"><div class="image-box" id="rebelifts"></div>
-      <a href="https://rebelifts.com" target="_blank"></a>
+    <div class="work-box right">
+       <div class="image-wrap"><div class="image-box" id="mapping"></div></div>
     </div>
 
     <div class="clearfix"></div>
 
-    <div class="work-title left">
+    <div class="work-title right title-right">
       <h5>Other work</h5>
       <a href="http://codepen.io/kattow88/" target="_blank"><h2>Coding Projects</h2></a>
       <p>Check out my codepen for miscellaneous small but fun coding projects I've worked on.</p>
       <h5>Interaction · Design · Coding</h5>
     </div>
 
-    <div class="work-box right">
-      <div class="image-box" id="weatherpug"></div>
-      <a href="/tea-time/" target="_blank"></a>
+    <div class="work-box left">
+      <a href="http://codepen.io/kattow88/" target="_blank"><div class="image-wrap"><div class="image-box" id="weatherpug"></div></div></a>
     </div>
 
     <div class="clearfix"></div>
 
-     <div class="work-title right">
-      <h5>edX · Coursera</h5>
-      <h2>Coursework</h2>
-      <p>UI/UX Iterative Sketching, Heuristic Analysis and Reports, User Interviews, and Micro-Testing. Coursework is ongoing! See my <a href="/resume.pdf">resume</a> or <a href="https://www.linkedin.com/in/kattow/">LinkedIn</a> for courselist.</p>
-      <h5>Research · Interviews · Low-Fi Prototyping</h5>
+    <div class="work-title left title-left">
+      <h5>Rebelifts</h5>
+      <a href="https://rebelifts.com" target="_blank"><h2>Web &amp; product design</h2></a>
+      <p>Women's fitness apparel e-commerce site. Branding, web design, custom coding, and product design. Products are still being added, and more custom modifications are forthcoming.</p>
+      <h5>Branding · Product Design · Coding</h5>
     </div>
-    <div class="work-box left"><div class="image-box" id="coursework"></div></div>
+
+    <div class="work-box right">
+    <a href="https://rebelifts.com" target="_blank"><div class="image-wrap"><div class="image-box" id="rebelifts"></div></div></a>
+    </div>
 
     <div class="clearfix"></div>
 
@@ -91,25 +99,17 @@
   </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/script.js"></script>
 <script type="text/javascript">
-//page scrolling
-  $("a[href^='#']").on("click", function(event) {
-    var target = $(this.getAttribute("href"));
-
-    if (target.length) {
-      event.preventDefault();
-      $("html, body").stop().animate({
-        scrollTop: target.offset().top
-      }, 500);
-    }
-   });
-
-//parallax images
-  $('.image-box').mousemove(function(e) {
-     var amountMovedX = (e.pageX * -0.3 / 6);
-     var amountMovedY = (e.pageY * -0.3 / 6);
-     $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px ');
+  $(function () {
+    $(".element").typed({
+      strings: ["digital storytelling.", "user-centered design.", "creative problem-solving.", "taking photos of my dogs."],
+      typeSpeed: 0,
+      backDelay: 800,
+      loop: true,
+      loopCount: null,
+    });
   });
-
 </script>
 </html>
