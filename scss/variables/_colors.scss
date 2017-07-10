@@ -1,0 +1,24 @@
+$onyx: #2F3836;
+$cadet: #8CA3A0;
+$sea: #5CD6C1;
+$mint: #91FFEC;
+$azureish: #D7F7F3;
+$light-white: #F9FFFE;
+
+.mint {
+	color: $mint;
+}
+a.mint {
+	&:hover {
+		color: $azureish;
+	}
+}
+
+.sea {
+	color: $sea;
+}
+a.sea {
+	&:hover {
+		color: $cadet;
+	}
+}

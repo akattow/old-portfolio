@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Nunito+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="container">
+    <ul id="navbar">
+      <li class="font_small" id="wk"><a href="#work">my work</a></li>
+      <li class="font_small" id="me"><a href="#contact">about me</a></li>
+      <li class="font_small" id="hello"><a href="#contact">say hi</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="work container grid" id="work">
+
+    <div class="box bbox">
+      <h1 class="title">Case Study</h1>
+      <h4 class="title">Helping users help themselves</h4>
+    </div>
+
+    <div class="box bbox">
+      <div class="subtitle">
+        <h2>The Project</h2>
+      </div>
+      <div class="content">
+        <p>
+          Nerd Fitness (NF) is a popular blog and fitness community that encourages users to build healthy habits. NF relies on a "Questing" system in which users form good habits to gather experience points.<br>
+          The goal of the project is to redesign the Quest system to help users track the habits they are forming and guide them on their journey.<br>
+          This project is not intended to be a superficial UI refresh. Structure and content are being redesigned as part of a complete exercise in improving the system usability.<br>
+        </p>
+        <p class="font_small">
+          This project is for my own exercise and enjoyment. I am not affiliated with Nerd Fitness, nor is this project.
+        </p>
+      </div>
+    </div>
+
+    <img class="box bbox img" id="screenshot" src="/assets/current_screenshot.png">
+
+    <div class="box bbox">
+      <div class="subtitle">
+        <h2>Know Thy User</h2>
+      </div>
+      <div class="content">
+        <p>
+          I began my project with a product analysis and competitor research. I used this information to create a survey for current active members of Nerd Fitness. I gathered responses from 72 users, including many additional comments and feedback from participants. You can see my survey and results <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLzQDXB7hHOrPusfw5iOnaMaQYg7QIqqCzvAkz7FZrQrJ-LA/viewanalytics" class="sea">here.</a>
+        </p>
+      </div>
+    </div>
+
+    <img class="box bbox img" id="survey" src="/assets/survey.png">
+
+    <div class="box bbox">
+      <div class="content">
+        <p>
+          As a result of my research and user interviews, I compiled three primary user personas. The personas are based not only on the survey participant data but also on qualitative observation of users content on forums and social media.
+        </p>
+      </div>
+    </div>
+
+    <img class="box bbox img" id="personas" src="/assets/3personas.png">
+
+    <div class="box bbox">
+      <div class="subtitle">
+        <h2>Define &amp; Design</h2>
+      </div>
+      <div class="content">
+        <p>
+          The current Nerd Fitness system exists across multiple sub-domains and can be difficult to navigate. I started by tracing the existing architecture into a rough sitemap before reconsidering not only the page structure but the Questing system itself.<br>
+          Ultimately, I broke down the Quests into two distinct types: Achievements, which are one-time accomplishments ("do 10 regular push-ups") and the new Quests, which are ongoing habits users try to form ("avoid soda for a week").<br>
+          My initial design iterations are built on the distinction between Achievements and Quests, combined with a reconsidered architecture for user profiles.
+          <br>
+          <br>
+          <span class="sea">Oops! I haven't uploaded my sketches yet, but I will very soon.</span>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="box bbox">
+      <div class="subtitle">
+        <h2>Coming Soon!</h2>
+      </div>
+      <div class="content">
+        <p>
+          This project is slated for completion by the end of July, so check back soon for wireframes &amp; hi-fi prototypes: the really exciting flashy bits.
+        </p>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <footer class="container" id="contact">
+    <div id="selfie"></div>
+    <p>I'm a left-brain right-brain hybrid who believes that design should make life easier for people when they need it most. Find me on <a href="https://www.linkedin.com/in/kattow" target="_blank">linkedin</a>, or <a href="mailto:kattow88@gmail.com" target="_blank">email me.</a></p>
+    <h3>Kat Tow</h3>
+    <ul>
+      <li><a href="http://codepen.io/kattow88/" target="_blank"><i class="fa fa-codepen"></i></a></li>
+      <li><a href="https://twitter.com/partly_stars" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/kattow" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="/assets/kattow_resume_2017.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a></li>
+      <li><a href="mailto:kattow88@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+  </footer>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102279814-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>

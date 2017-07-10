@@ -1,0 +1,27 @@
+#teatime {
+	background-image: url("/assets/tea-time.jpg");
+}
+
+#mapping {
+	background-image: url("/assets/mapping.jpg");
+}
+
+#coursework {
+	background-image: url("/assets/coursework.jpg");
+}
+
+#nf {
+	background-image: url("/assets/nf_wordcloud.png");
+}
+
+#screenshot {
+	filter: brightness(80%);
+}
+
+#selfie {
+	background-image: url("/assets/selfie.jpg");
+	background-size: cover;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}

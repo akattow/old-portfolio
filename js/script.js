@@ -12,41 +12,43 @@
 
 //parallax images
 
-  var followX = 0,
-      followY = 0,
-      x = 0,
-      y = 0,
-      friction = 1 / 30,
-      moveBox;
+  // var followX = 0,
+  //     followY = 0,
+  //     x = 0,
+  //     y = 0,
+  //     friction = 1 / 30,
+  //     moveBox;
 
-  function moveBackground() {
-    x += (followX - x) * friction;
-    y += (followY - y) * friction;
+  // function moveBackground() {
+  //   x += (followX - x) * friction;
+  //   y += (followY - y) * friction;
 
-    translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+  //   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
-    $(moveBox).css({
-      '-webit-transform': translate,
-      '-moz-transform': translate,
-      'transform': translate
-    });
+  //   $(moveBox).css({
+  //     '-webit-transform': translate,
+  //     '-moz-transform': translate,
+  //     'transform': translate
+  //   });
 
-    window.requestAnimationFrame(moveBackground);
-  }
+  //   window.requestAnimationFrame(moveBackground);
+  // }
 
-  $(window).on('mousemove click', function(e) {
+  // $(window).on('mousemove click', function(e) {
 
-    if (e.target.className !== 'image-box') return true;
+  //   if (e.target.className !== 'img') {
+  //     return true;
+  //   }
 
-    moveBox = e.target;
+  //   moveBox = e.target;
 
-    var mouseX = Math.max(-100, Math.min(100, $(moveBox).offset().left + $(moveBox).width() / 2 - e.clientX));
-    var mouseY = Math.max(-100, Math.min(100, $(moveBox).position().top + $(moveBox).height() / 2 - e.clientY));
-    followX = (20 * mouseX) / 100; // 100 : 12 = mouxeX : follow
-    followY = (20 * mouseY) / 100;
+  //   var mouseX = Math.max(-100, Math.min(100, $(moveBox).offset().left + $(moveBox).width() / 2 - e.clientX));
+  //   var mouseY = Math.max(-100, Math.min(100, $(moveBox).position().top + $(moveBox).height() / 2 - e.clientY));
+  //   followX = (30 * mouseX) / 100; // 100 : 12 = mouxeX : follow
+  //   followY = (30 * mouseY) / 100;
 
-  });
+  // });
 
-  moveBackground();
+  // moveBackground();
 
 

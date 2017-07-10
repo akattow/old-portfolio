@@ -7,13 +7,24 @@
 		"uuidString": "84054C8F-A13C-4199-9FC8-54427217EE56"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/about.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/about.html",
 		"oF": 0
+		},
+	"\/assets\/3personas.png": {
+		"ft": 32768,
+		"iS": 798753,
+		"oA": 0,
+		"oAP": "\/assets\/3personas.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/assets\/coursework.jpg": {
 		"ft": 16384,
@@ -23,6 +34,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"\/assets\/current_screenshot.png": {
+		"ft": 32768,
+		"iS": 902373,
+		"oA": 0,
+		"oAP": "\/assets\/current_screenshot.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/edxux_preview.png": {
@@ -85,6 +107,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/assets\/nf_wordcloud.png": {
+		"ft": 32768,
+		"iS": 211840,
+		"oA": 0,
+		"oAP": "\/assets\/nf_wordcloud.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/rebelifts.png": {
 		"ft": 32768,
 		"iS": 743243,
@@ -98,9 +131,30 @@
 		},
 	"\/assets\/selfie.jpg": {
 		"ft": 16384,
-		"iS": 21514,
+		"iS": 42527,
 		"oA": 0,
 		"oAP": "\/assets\/selfie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/survey.png": {
+		"ft": 32768,
+		"iS": 111222,
+		"oA": 0,
+		"oAP": "\/assets\/survey.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/tea-time.jpg": {
+		"ft": 16384,
+		"iS": 90911,
+		"oA": 0,
+		"oAP": "\/assets\/tea-time.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -142,19 +196,6 @@
 		"oA": 2,
 		"oAP": "\/css\/style.css.map",
 		"oF": 0
-		},
-	"\/css\/style.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"\/edxux.html": {
 		"ft": 8192,
@@ -222,14 +263,141 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/script.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/min\/script-min.js",
+	"\/scss\/_normalize.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/css\/_normalize.css",
 		"oF": 0,
-		"sC": 1,
-		"tS": 0
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/content\/_content.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/layout\/_breakpoints.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_breakpoints.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/layout\/_grid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/layout\/_layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_layout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/layout\/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/mixins\/_mixins.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/style.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/variables\/_colors.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/variables\/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/uxnf.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/uxnf.html",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -2109,7 +2277,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
@@ -2176,6 +2344,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
